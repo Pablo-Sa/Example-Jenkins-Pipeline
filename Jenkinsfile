@@ -52,7 +52,9 @@ pipeline {
 			  Att.,''', cc: '', from: '', replyTo: '', subject: 'E-mail de Informação Builds, Falha', to: 'pablov.pereira12@gmail.com'
          }  
         unstable {  
-             echo 'This will run only if the run was marked as unstable'  
+              mail bcc: '', body: '''Bom dia, 
+			 Build instável.
+			  Att.,''', cc: '', from: '', replyTo: '', subject: 'E-mail de Informação Builds, instável', to: 'pablov.pereira12@gmail.com'
          }			   
         }
     } 
