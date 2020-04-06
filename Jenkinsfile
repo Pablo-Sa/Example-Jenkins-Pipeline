@@ -48,8 +48,8 @@ pipeline {
 		 }  
         failure {  
              mail bcc: '', body: '''Bom dia, 
-			 Build Executado com Sucesso.
-			  Att.,''', cc: '', from: '', replyTo: '', subject: 'E-mail de Informação Builds Projeto: ${env.JOB_NAME}', to: 'pablov.pereira12@gmail.com'
+			 Build Falhou.
+			  Att.,''', cc: '', from: '', replyTo: '', subject: 'E-mail de Informação Builds, Falha', to: 'pablov.pereira12@gmail.com'
          }  
         unstable {  
              echo 'This will run only if the run was marked as unstable'  
