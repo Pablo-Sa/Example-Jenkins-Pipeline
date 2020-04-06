@@ -35,7 +35,7 @@ pipeline {
         }
 		
 	stage ('Email Notification') {
-            mail bcc: '', body: 'Example Test Messagem E-mail Pipeline', cc: '', from: '', replyTo: '', subject: 'Mensagem de Teste', to: 'pablov.pereira@gmail.com'
+          mail bcc: '', body: 'Messagem Teste Pipilene', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'pablo.sa@linx.com.br'
         }
     }
 }
