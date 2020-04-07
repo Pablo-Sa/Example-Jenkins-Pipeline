@@ -4,7 +4,7 @@
 
 Abaixo imagem ilustrativa do ciclo de vida da requicição:
 
-![alt text](Integration Continue.jpg)
+![alt text](IC.png)
 
 #### Fizz Buzz Exemplo com Java 8 Usando JUnit 5
 
