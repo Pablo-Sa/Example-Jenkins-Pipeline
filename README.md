@@ -2,7 +2,7 @@
 
 - Jenkins Ambiente Linux e Derivados.
 
-Abaixo imagem ilustrativa do ciclo de vida da requicição:
+Abaixo imagem ilustrativa do Ciclo Criado.
 
 ![alt text](IC.png)
 
