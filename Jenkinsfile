@@ -42,6 +42,13 @@ pipeline {
 			  Att.,''', cc: '', from: '', replyTo: '', subject: 'E-mail de Informação Builds Projeto Iniciado', to: 'pablov.pereira12@gmail.com'
 			   }
 		success {  
+		 docker.withRegistry('https://registry.hub.docker.com', 'DockerHub') {
+
+        def customImage = docker.build("pablosa/jenkins-example-integration-continue")
+
+        /* Push the container to the custom Registry */
+        customImage.push()
+    }
              mail bcc: '', body: '''Bom dia, 
 			  Build Executado Com Sucesso.
 			  Att.,''', cc: '', from: '', replyTo: '', subject: 'E-mail de Informação Builds, Sucesso.', to: 'pablov.pereira12@gmail.com'
