@@ -2,7 +2,7 @@ pipeline {
     agent any
 	
 	tools {
-      // Configure o Maven com Nome abaixo.
+      
       maven "maven_3_5_0"
    }
 
